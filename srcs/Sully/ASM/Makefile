@@ -2,16 +2,18 @@ NAME=Sully
 
 SRC = $(NAME).s
 OBJS = 	$(SRC:%.s=%.o)
-CC= nasm -f macho64
+NASM=nasm -f elf64
+FLAGS=-Wall -Wextra -Werror -no-pie
+CC=gcc $(FLAGS)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ld $(OBJS) -macosx_version_min 10.8 -lSystem -o $(NAME)
+	$(CC) $(OBJS) -o $(NAME)
 
 %.o: %.s
 	@echo "$(NAME): Compiling: $<..."
-	$(CC) -o $@ $<
+	$(NASM) -o $@ $<
 
 clean:
 	@echo "$(NAME): Removing objects dir..."

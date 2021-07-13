@@ -2,7 +2,7 @@ NAME=Sully
 
 SRC = $(NAME).c
 OBJS = 	$(SRC:%.c=%.o)
-CC=gcc -Wall -Wextra -Werror
+CC=gcc -Wall -Wextra -Werror --std=gnu99
 
 all: $(NAME)
 
@@ -11,7 +11,7 @@ $(NAME): $(OBJS)
 
 %.o: %.c
 	@echo "$(NAME): Compiling: $<..."
-	@$(CC) -c -o $@ $< -I$(INCLUDES)
+	@$(CC) -c -o $@ $<
 
 clean:
 	@echo "$(NAME): Removing objects dir..."
