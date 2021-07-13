@@ -1,0 +1,19 @@
+{
+  "name": "JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Sully.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "printf": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

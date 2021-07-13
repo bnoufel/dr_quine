@@ -1,0 +1,11 @@
+srcs/Colleen/*/*.o
+srcs/Colleen/*/Colleen
+srcs/Grace/*/*.o
+srcs/Grace/*/Grace
+srcs/Grace/*/Grace_kid.*
+srcs/Grace/*/Grace_kid
+srcs/Sully/*/*.o
+srcs/Sully/*/Sully
+srcs/Sully/*/Sully_*
+srcs/*/JS/node_modules
+.gdb_history
